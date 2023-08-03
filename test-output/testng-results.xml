@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="6" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-02T23:01:42Z" name="Suite" finished-at="2023-08-02T23:05:34Z" duration-ms="231993">
+    <groups>
+    </groups>
+    <test started-at="2023-08-02T23:01:42Z" name="Test Case for ecommerce android Form" finished-at="2023-08-02T23:03:30Z" duration-ms="107590">
+      <class name="ecommerceTest.ecommerce_TestCase_FormValidations">
+        <test-method is-config="true" signature="configureSetUp()[pri:0, instance:ecommerceTest.ecommerce_TestCase_FormValidations@74c79fa2]" started-at="2023-08-02T23:01:43Z" name="configureSetUp" finished-at="2023-08-02T23:01:57Z" duration-ms="14382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureSetUp -->
+        <test-method signature="loginFailure(java.util.HashMap)[pri:0, instance:ecommerceTest.ecommerce_TestCase_FormValidations@74c79fa2]" started-at="2023-08-02T23:01:57Z" name="loginFailure" data-provider="getData" finished-at="2023-08-02T23:02:15Z" duration-ms="18174" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Sathya, country=Argentina, gender=female}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.Toast[1]})]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.Toast[1]})
+at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:125)
+at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:54)
+at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:75)
+at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$SpwE51fs.getAttribute(Unknown Source)
+at pageObject.Android.FormPage.getToastMessage(FormPage.java:84)
+at ecommerceTest.ecommerce_TestCase_FormValidations.loginFailure(ecommerce_TestCase_FormValidations.java:37)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@42ed89da (tried for 1 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:262)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:98)
+at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:118)
+... 28 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.widget.Toast[1]})
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18'
+Driver info: driver.version: RemoteWebDriver
+at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:77)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$0(AppiumElementLocator.java:119)
+at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:171)
+at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:164)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFailure -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecommerceTest.ecommerce_TestCase_FormValidations@74c79fa2]" started-at="2023-08-02T23:02:16Z" name="tearDown" finished-at="2023-08-02T23:02:17Z" duration-ms="794" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="configureSetUp()[pri:0, instance:ecommerceTest.ecommerce_TestCase_FormValidations@74c79fa2]" started-at="2023-08-02T23:02:17Z" name="configureSetUp" finished-at="2023-08-02T23:02:25Z" duration-ms="8993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureSetUp -->
+        <test-method signature="loginFailure(java.util.HashMap)[pri:0, instance:ecommerceTest.ecommerce_TestCase_FormValidations@74c79fa2]" started-at="2023-08-02T23:02:25Z" name="loginFailure" data-provider="getData" finished-at="2023-08-02T23:02:43Z" duration-ms="17928" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Jegadish, country=Argentina, gender=male}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.Toast[1]})]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.Toast[1]})
+at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:125)
+at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:54)
+at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:75)
+at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$KSRCfFLH.getAttribute(Unknown Source)
+at pageObject.Android.FormPage.getToastMessage(FormPage.java:84)
+at ecommerceTest.ecommerce_TestCase_FormValidations.loginFailure(ecommerce_TestCase_FormValidations.java:37)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@3009eed7 (tried for 1 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:262)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:98)
+at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:118)
+... 28 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.widget.Toast[1]})
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18'
+Driver info: driver.version: RemoteWebDriver
+at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:77)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$0(AppiumElementLocator.java:119)
+at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:171)
+at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:164)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFailure -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecommerceTest.ecommerce_TestCase_FormValidations@74c79fa2]" started-at="2023-08-02T23:02:44Z" name="tearDown" finished-at="2023-08-02T23:02:45Z" duration-ms="874" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="configureSetUp()[pri:0, instance:ecommerceTest.ecommerce_TestCase_FormValidations@74c79fa2]" started-at="2023-08-02T23:02:45Z" name="configureSetUp" finished-at="2023-08-02T23:02:52Z" duration-ms="7599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureSetUp -->
+        <test-method signature="loginSucess(java.util.HashMap)[pri:0, instance:ecommerceTest.ecommerce_TestCase_FormValidations@74c79fa2]" started-at="2023-08-02T23:02:52Z" name="loginSucess" data-provider="getData" finished-at="2023-08-02T23:03:06Z" duration-ms="14038" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Sathya, country=Argentina, gender=female}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSucess -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecommerceTest.ecommerce_TestCase_FormValidations@74c79fa2]" started-at="2023-08-02T23:03:06Z" name="tearDown" finished-at="2023-08-02T23:03:07Z" duration-ms="738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="configureSetUp()[pri:0, instance:ecommerceTest.ecommerce_TestCase_FormValidations@74c79fa2]" started-at="2023-08-02T23:03:07Z" name="configureSetUp" finished-at="2023-08-02T23:03:16Z" duration-ms="8540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureSetUp -->
+        <test-method signature="loginSucess(java.util.HashMap)[pri:0, instance:ecommerceTest.ecommerce_TestCase_FormValidations@74c79fa2]" started-at="2023-08-02T23:03:16Z" name="loginSucess" data-provider="getData" finished-at="2023-08-02T23:03:29Z" duration-ms="13519" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Jegadish, country=Argentina, gender=male}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSucess -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecommerceTest.ecommerce_TestCase_FormValidations@74c79fa2]" started-at="2023-08-02T23:03:29Z" name="tearDown" finished-at="2023-08-02T23:03:30Z" duration-ms="815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ecommerceTest.ecommerce_TestCase_FormValidations -->
+    </test> <!-- Test Case for ecommerce android Form -->
+    <test started-at="2023-08-02T23:03:30Z" name="Test Case for ecommerce android Cart" finished-at="2023-08-02T23:05:34Z" duration-ms="123961">
+      <class name="ecommerceTest.ecommerce_TestCase_CartValidations">
+        <test-method is-config="true" signature="configureSetUp()[pri:0, instance:ecommerceTest.ecommerce_TestCase_CartValidations@7b84fcf8]" started-at="2023-08-02T23:03:31Z" name="configureSetUp" finished-at="2023-08-02T23:03:39Z" duration-ms="8660" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureSetUp -->
+        <test-method signature="verifyProductInCart(java.util.HashMap)[pri:0, instance:ecommerceTest.ecommerce_TestCase_CartValidations@7b84fcf8]" started-at="2023-08-02T23:03:39Z" name="verifyProductInCart" data-provider="getData" finished-at="2023-08-02T23:04:03Z" duration-ms="23605" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Sathya, country=Argentina, gender=female}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductInCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecommerceTest.ecommerce_TestCase_CartValidations@7b84fcf8]" started-at="2023-08-02T23:04:03Z" name="tearDown" finished-at="2023-08-02T23:04:04Z" duration-ms="744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="configureSetUp()[pri:0, instance:ecommerceTest.ecommerce_TestCase_CartValidations@7b84fcf8]" started-at="2023-08-02T23:04:04Z" name="configureSetUp" finished-at="2023-08-02T23:04:12Z" duration-ms="8720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureSetUp -->
+        <test-method signature="verifyProductInCart(java.util.HashMap)[pri:0, instance:ecommerceTest.ecommerce_TestCase_CartValidations@7b84fcf8]" started-at="2023-08-02T23:04:12Z" name="verifyProductInCart" data-provider="getData" finished-at="2023-08-02T23:04:35Z" duration-ms="22531" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Jegadish, country=Argentina, gender=male}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductInCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecommerceTest.ecommerce_TestCase_CartValidations@7b84fcf8]" started-at="2023-08-02T23:04:35Z" name="tearDown" finished-at="2023-08-02T23:04:36Z" duration-ms="750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="configureSetUp()[pri:0, instance:ecommerceTest.ecommerce_TestCase_CartValidations@7b84fcf8]" started-at="2023-08-02T23:04:36Z" name="configureSetUp" finished-at="2023-08-02T23:04:44Z" duration-ms="8767" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureSetUp -->
+        <test-method signature="verifytotalPriceCalculation(java.util.HashMap)[pri:0, instance:ecommerceTest.ecommerce_TestCase_CartValidations@7b84fcf8]" started-at="2023-08-02T23:04:44Z" name="verifytotalPriceCalculation" data-provider="getData" finished-at="2023-08-02T23:05:04Z" duration-ms="19902" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Sathya, country=Argentina, gender=female}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifytotalPriceCalculation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecommerceTest.ecommerce_TestCase_CartValidations@7b84fcf8]" started-at="2023-08-02T23:05:04Z" name="tearDown" finished-at="2023-08-02T23:05:05Z" duration-ms="879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="configureSetUp()[pri:0, instance:ecommerceTest.ecommerce_TestCase_CartValidations@7b84fcf8]" started-at="2023-08-02T23:05:05Z" name="configureSetUp" finished-at="2023-08-02T23:05:14Z" duration-ms="8600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureSetUp -->
+        <test-method signature="verifytotalPriceCalculation(java.util.HashMap)[pri:0, instance:ecommerceTest.ecommerce_TestCase_CartValidations@7b84fcf8]" started-at="2023-08-02T23:05:14Z" name="verifytotalPriceCalculation" data-provider="getData" finished-at="2023-08-02T23:05:34Z" duration-ms="19987" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Jegadish, country=Argentina, gender=male}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifytotalPriceCalculation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecommerceTest.ecommerce_TestCase_CartValidations@7b84fcf8]" started-at="2023-08-02T23:05:34Z" name="tearDown" finished-at="2023-08-02T23:05:34Z" duration-ms="807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ecommerceTest.ecommerce_TestCase_CartValidations -->
+    </test> <!-- Test Case for ecommerce android Cart -->
+  </suite> <!-- Suite -->
+</testng-results>

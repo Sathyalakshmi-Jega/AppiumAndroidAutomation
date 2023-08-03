@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="ecommerceUtils.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Test Case for ecommerce android Form(failed)">
+    <classes>
+      <class name="ecommerceTest.ecommerce_TestCase_FormValidations">
+        <methods>
+          <include name="loginFailure" invocation-numbers="0 1"/>
+          <include name="tearDown"/>
+          <include name="configureSetUp"/>
+        </methods>
+      </class> <!-- ecommerceTest.ecommerce_TestCase_FormValidations -->
+    </classes>
+  </test> <!-- Test Case for ecommerce android Form(failed) -->
+</suite> <!-- Failed suite [Suite] -->

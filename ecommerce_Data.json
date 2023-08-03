@@ -1,0 +1,14 @@
+[
+    {
+        "name"    :"Sathya",
+        "country":"Argentina",
+        "gender":"female"
+      },
+
+
+       {
+         "name"    :"Jegadish",
+         "country":"Argentina",
+         "gender":"male"
+       }
+]

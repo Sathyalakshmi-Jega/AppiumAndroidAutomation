@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<groups>
+		<run>
+			<include name="smoke"></include>
+		</run>
+	</groups>
+  <test thread-count="5" name="Test Case for ecommerce android Form">
+    <classes>
+      <class name="ecommerceTest.ecommerce_TestCase_FormValidations"/>
+    </classes>
+  </test> <!-- Test -->
+    <test thread-count="5" name="Test Case for ecommerce android Cart">
+    <classes>
+      <class name="ecommerceTest.ecommerce_TestCase_CartValidations"/>
+    </classes>
+  </test> <!-- Test -->
+  <listeners>
+	  <listener class-name="ecommerceUtils.TestListener"></listener>
+  </listeners>
+</suite> <!-- Suite -->
